@@ -1,0 +1,23 @@
+{
+  "name": "project-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Siddhartha Sarkar",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && yarn install && yarn build",
+    "client": "cd client && yarn start",
+    "server": "nodemon index.js",
+    "dev": "concurrently  --names \"SERVER,CLIENT\" -c \"bgGreen.bold,bgMagenta.bold\" \"npm run start\" \"npm run client\"",
+    "dev2": "concurrently  --names \"SERVER,CLIENT\" -c \"bgGreen.bold,bgMagenta.bold\" \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9"
+  }
+}

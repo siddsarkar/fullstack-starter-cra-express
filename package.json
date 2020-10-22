@@ -2,7 +2,6 @@
   "name": "project-starter",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Siddhartha Sarkar",
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
